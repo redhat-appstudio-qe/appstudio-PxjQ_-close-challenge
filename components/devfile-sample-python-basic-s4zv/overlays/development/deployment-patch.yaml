@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-s4zv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-zifc-tenant/appstudio/devfile-sample-python-basic-s4zv@sha256:a37e2d8edfd953e7b5509e58b22ca8b0f8c686105a996db437d0bd09c3602ba4
+        name: my-python
+        resources: {}
+status: {}
