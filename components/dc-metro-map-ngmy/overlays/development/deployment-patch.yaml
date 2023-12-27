@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ngmy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-zifc-tenant/appstudio/dc-metro-map-ngmy@sha256:1736bae9c6f56464ab204482d41027d35e5ab2939483439f06725f73d4116dbb
+        name: my-nodejs
+        resources: {}
+status: {}
